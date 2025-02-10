@@ -1,3 +1,4 @@
+
 // import java.util.*;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,7 +7,6 @@ public class ArrayLists {
         ArrayList <Integer> list = new ArrayList<Integer>();
         // ArrayList <String> list2 = new ArrayList<String>();
         // ArrayList <Integer> list3 = new ArrayList<Integer>();
-
 
         //add element 
         list.add(23);
@@ -33,18 +33,17 @@ public class ArrayLists {
         int size= list.size();
         System.out.println(size);
 
-
-
         System.out.println("");
 
         for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
-            
+            System.out.print("Element at "+(i)+" : " );
+            System.out.println(list.get(i));  
         }
-
+        //to findout
+        boolean found = list.contains(3);
+        System.out.println(found);
         //sorting 
         Collections.sort(list);
         System.out.println(list);
     }
-    
 }
