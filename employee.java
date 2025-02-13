@@ -2,10 +2,10 @@ import java.util.*;
 
 class employee_details{
     long emp_id;
-    String emp_name;
-    String emp_designation;
+    Strings emp_name;
+    Strings emp_designation;
     long emp_salary;
-    String emp_department;
+    Strings emp_department;
 
     void read(){
         Scanner sc = new Scanner(System.in);
@@ -32,7 +32,7 @@ class employee_details{
     }
 }
 public class employee{
-    public static void main(String args[]){
+    public static void main(Strings args[]){
         employee_details emp = new employee_details();
         emp.read();
         emp.display();

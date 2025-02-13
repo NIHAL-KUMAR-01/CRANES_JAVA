@@ -1,9 +1,9 @@
 class ElectronicDevice{
-    String brand;
-    String model;
+    Strings brand;
+    Strings model;
     Double powerusage;
     ElectronicDevice(){};
-    ElectronicDevice(String brand,String model,Double powerusage){
+    ElectronicDevice(Strings brand,Strings model,Double powerusage){
         this.brand=brand;
         this.model=model;
         this.powerusage=powerusage;
@@ -17,10 +17,10 @@ class ElectronicDevice{
 
 }
 class SmartDevice extends ElectronicDevice{
-    String connectivity;
-    String os;
+    Strings connectivity;
+    Strings os;
     SmartDevice(){};
-    SmartDevice(String a,String b){
+    SmartDevice(Strings a,Strings b){
         super("Google Pixel ","7A",12.0);
         connectivity=a;
         os=b;
@@ -56,7 +56,7 @@ class SmartPhone extends SmartDevice{
 }
 
 public class MultiLevel {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         SmartPhone Pixel= new SmartPhone(50.25,5000);
         Pixel.displayDeviceInfo();
         

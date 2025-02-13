@@ -39,7 +39,7 @@ class Grades{
 }
 
 public class Class_Grades {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         Grades user1= new Grades(35, 90, 35);
         user1.findTotal();
         user1.findAvg();

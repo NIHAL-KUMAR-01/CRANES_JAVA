@@ -2,9 +2,9 @@ import java.util.*;
 
 class data{
     long cus_id;
-    String cus_name;
+    Strings cus_name;
     long mobile_no;
-    String cus_city;
+    Strings cus_city;
     void readcustomer(){
         Scanner sc = new Scanner (System.in);
         System.out.print("Enter Customer id: ");
@@ -30,7 +30,7 @@ class data{
     }
 }
 public class customer {
-    public static void main(String args[]){
+    public static void main(Strings args[]){
         data[] user = new data[5];
         for(int i=0;i<5;i++){
             user[i]= new data();

@@ -1,11 +1,11 @@
 class OrderDetails{
     long order_id;
-    String order_name;
+    Strings order_name;
     int order_quantity;
     int order_price;
     int total_price;
     
-    OrderDetails(long a,String b,int c,int d){
+    OrderDetails(long a,Strings b,int c,int d){
         order_id=a;
         order_name=b;
         order_quantity=c;
@@ -28,7 +28,7 @@ class OrderDetails{
 }
 
 public class Order {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         OrderDetails user1= new OrderDetails(12345, "Coffee Pouch Bru", 2, 3);
         user1.TotalPrice();
 

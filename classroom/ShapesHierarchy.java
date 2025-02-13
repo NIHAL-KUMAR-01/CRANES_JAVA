@@ -10,9 +10,9 @@
  * ==========================================================
  */
 class Shape{
-    String color;
+    Strings color;
     Shape(){};
-    Shape(String color){
+    Shape(Strings color){
         this.color=color;
     }
     void draw(){
@@ -46,7 +46,7 @@ class Rectangle extends Shape{
 
 }
 public class ShapesHierarchy {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         Circle user1=new Circle(25.00);
         user1.draw();
         Rectangle user2= new Rectangle(12.00, 13.00);

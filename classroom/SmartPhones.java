@@ -11,8 +11,8 @@
  */
 
 interface Phone {
-    void makeCall(String phoneNumber);
-    void sendMessage(String phoneNumber, String message);
+    void makeCall(Strings phoneNumber);
+    void sendMessage(Strings phoneNumber, Strings message);
 }
 
 interface Camera {
@@ -24,11 +24,11 @@ class Smartphone implements Phone, Camera {
     
     Smartphone() {};
     
-    public void makeCall(String phoneNumber) {
+    public void makeCall(Strings phoneNumber) {
         System.out.println("Calling " + phoneNumber + "...");
     }
     
-    public void sendMessage(String phoneNumber, String message) {
+    public void sendMessage(Strings phoneNumber, Strings message) {
         System.out.println("Sending message to " + phoneNumber + ": " + message);
     }
 
@@ -42,7 +42,7 @@ class Smartphone implements Phone, Camera {
 }
 
 public class SmartPhones {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         Smartphone myPhone = new Smartphone();
         myPhone.makeCall("+91-9876543210");
         myPhone.sendMessage("+91-9876543210", "Hello, how are you?");

@@ -1,9 +1,9 @@
 class Employee{
     int employeeid;
-    String name;
-    String department;
+    Strings name;
+    Strings department;
     Employee(){};
-    Employee(int a,String  b,String c){
+    Employee(int a,Strings  b,Strings c){
         employeeid=a;
         name=b;
         department=c;
@@ -32,7 +32,7 @@ class Manager extends Employee{
 }
 
 public class EmpInheritance {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         Manager keshav= new Manager(69);
         keshav.displayDetails();
         

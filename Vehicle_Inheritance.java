@@ -1,9 +1,9 @@
 class Vehicle{
-    String make;
-    String model;
+    Strings make;
+    Strings model;
     int year;
     Vehicle(){};
-    Vehicle(String a,String b,int c){
+    Vehicle(Strings a,Strings b,int c){
         make=a;
         model=b;
         year=c;
@@ -37,7 +37,7 @@ class Car extends Vehicle{
 }
 
 public class Vehicle_Inheritance {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         // System.out.println("Hello");
         Car tata=new Car(4, 25);
         tata.displayInfo();

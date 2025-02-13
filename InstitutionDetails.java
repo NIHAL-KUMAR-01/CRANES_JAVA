@@ -1,8 +1,8 @@
 class Institution{
-    String name;
-    String location;
+    Strings name;
+    Strings location;
     Institution(){};
-    Institution(String a,String b){
+    Institution(Strings a,Strings b){
         name=a;
         location=b;
     };
@@ -31,10 +31,10 @@ class University extends Institution{
     }
 }
 class Department extends University{
-    String departmentname;
-    String headofdepartment;
+    Strings departmentname;
+    Strings headofdepartment;
     Department(){}
-    Department(String a,String b){
+    Department(Strings a,Strings b){
         super(101,6000);
         departmentname=a;
         headofdepartment=b;
@@ -52,7 +52,7 @@ class Department extends University{
     
 }
 public class InstitutionDetails {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         Department cse = new Department("Computer Sci & Engineeering","Prof. Monalisa Misra");
         cse.displayInstitutionInfo();
     }

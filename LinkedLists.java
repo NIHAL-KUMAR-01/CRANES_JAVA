@@ -1,15 +1,15 @@
 public class LinkedLists {
     class Node {
-        String data;
+        Strings data;
         Node next;
-        Node(String data) {
+        Node(Strings data) {
             this.data = data;
             this.next = null;
         }
     }
     
     Node head; 
-    void addAtFirst(String data) {
+    void addAtFirst(Strings data) {
         Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
@@ -18,7 +18,7 @@ public class LinkedLists {
         newNode.next = head;
         head = newNode;
     }
-    void addAtLast(String data) {
+    void addAtLast(Strings data) {
         Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
@@ -38,7 +38,7 @@ public class LinkedLists {
         }
         System.out.println("null");
     }
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         LinkedLists list = new LinkedLists();
         list.addAtFirst("a");
         list.addAtFirst("is");

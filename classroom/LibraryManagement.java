@@ -14,12 +14,12 @@ import java.util.*;
 
 abstract class LibraryItem {
     int id;
-    String title;
-    String author;
+    Strings title;
+    Strings author;
     int publicationYear;
     boolean available;
 
-    LibraryItem(int id, String title, String author, int publicationYear) {
+    LibraryItem(int id, Strings title, Strings author, int publicationYear) {
         this.id = id;
         this.title = title;
         this.author = author;
@@ -45,22 +45,22 @@ abstract class LibraryItem {
         return available;
     }
 
-    abstract String getDetails();
+    abstract Strings getDetails();
 }
 
 class Book extends LibraryItem {
-    String ISBN;
-    String genre;
+    Strings ISBN;
+    Strings genre;
     int pages;
 
-    Book(int id, String title, String author, int publicationYear, String ISBN, String genre, int pages) {
+    Book(int id, Strings title, Strings author, int publicationYear, Strings ISBN, Strings genre, int pages) {
         super(id, title, author, publicationYear);
         this.ISBN = ISBN;
         this.genre = genre;
         this.pages = pages;
     }
 
-    String getGenre() {
+    Strings getGenre() {
         return genre;
     }
 
@@ -69,17 +69,17 @@ class Book extends LibraryItem {
     }
 
     @Override
-    String getDetails() {
+    Strings getDetails() {
         return "Book: " + title + " by " + author + ", Genre: " + genre + ", Pages: " + pages;
     }
 }
 
 class Journal extends LibraryItem {
-    String ISSN;
+    Strings ISSN;
     int volume;
     int issueNumber;
 
-    Journal(int id, String title, String author, int publicationYear, String ISSN, int volume, int issueNumber) {
+    Journal(int id, Strings title, Strings author, int publicationYear, Strings ISSN, int volume, int issueNumber) {
         super(id, title, author, publicationYear);
         this.ISSN = ISSN;
         this.volume = volume;
@@ -95,17 +95,17 @@ class Journal extends LibraryItem {
     }
 
     @Override
-    String getDetails() {
+    Strings getDetails() {
         return "Journal: " + title + " (Volume: " + volume + ", Issue: " + issueNumber + ")";
     }
 }
 
 class DVD extends LibraryItem {
     int duration;
-    String format;
-    String regionCode;
+    Strings format;
+    Strings regionCode;
 
-    DVD(int id, String title, String author, int publicationYear, int duration, String format, String regionCode) {
+    DVD(int id, Strings title, Strings author, int publicationYear, int duration, Strings format, Strings regionCode) {
         super(id, title, author, publicationYear);
         this.duration = duration;
         this.format = format;
@@ -116,12 +116,12 @@ class DVD extends LibraryItem {
         return duration;
     }
 
-    String getFormat() {
+    Strings getFormat() {
         return format;
     }
 
     @Override
-    String getDetails() {
+    Strings getDetails() {
         return "DVD: " + title + " (Duration: " + duration + " mins, Format: " + format + ")";
     }
 }
@@ -145,7 +145,7 @@ class Library {
         return false;
     }
 
-    LibraryItem searchItem(String title) {
+    LibraryItem searchItem(Strings title) {
         for (LibraryItem item : items) {
             if (item.title.equalsIgnoreCase(title)) {
                 return item;
@@ -162,7 +162,7 @@ class Library {
 }
 
 public class LibraryManagement {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         Library library = new Library();
         
         Book book1 = new Book(1, "Bhagavad Gita", "Vyasa", 400, "978-81-7992-604-7", "Spirituality", 700);
