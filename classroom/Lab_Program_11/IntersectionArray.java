@@ -2,8 +2,7 @@ package Lab_Program_11;
 /**
  * ==========================================================
  * Program Name: IntersectionArray
- * Description : Write a Java program to find the
-intersection of two arrays
+ * Description : Write a Java program to find the intersection of two arrays
  * Author      : Nihal Kumar
  * Created On  : 21-02-2025
  * Organization: C.V. Raman Global University
