@@ -88,24 +88,35 @@ class Library{
         // books.removeIf(n-> n.getISBN().equalsIgnoreCase(ISBN));
     }
 
+    public void updatestatus(){
+        for (Book book : books) {
+            if (book.isAvailable==false) {
+                book.isAvailable=true;
+                
+            }  
+        }
+    }
+
 }
 
 public class LibraryManagementSystem {
     public static void main(String[] args) {
         System.out.println("-------------Welcome to Library Management System --------------");
         Library user = new Library();
-        Book Book1 = new Book("LetUS C", "Restin beiber", "ASH654", true);
+        Book Book1 = new Book("LetUS C", "Restin beiber", "ASH654", false);
         Book Book2 = new Book("Java Programming Part 1 ", "John Doe", "ASG654", true);
-        Book Book3 = new Book("Java Programming Part 2", "John Singh", "ASY954", true);
+        Book Book3 = new Book("Java Programming Part 2", "John Singh", "ASY954", false);
         user.addBook(Book1);
         user.addBook(Book2);
         user.addBook(Book3);
         user.displayBooks();
         user.searchbook("John Doe");
-        System.out.println("Removing book having ISBN ");
-        user.removeBook("ASH654");
+        // System.out.println("Removing book having ISBN ");
+        // user.removeBook("ASH654");
         user.displayBooks();
-        
+        System.out.println("Book Status Changed \n All Books are available now");
+        user.updatestatus();
+        user.displayBooks();
     }
 
     
