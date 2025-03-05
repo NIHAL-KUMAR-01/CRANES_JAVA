@@ -32,6 +32,17 @@ public class HashMapDemo {
         System.out.println(studentname);
         System.out.println(studentname.keySet());
         System.out.println(studentname.values());
+
+        System.out.println("Using Enhanced for loop ");
+        for (String i : studentname.values()) {
+            System.out.println(i);
+        }
+
+        for(HashMap.Entry<Integer,String> m : studentname.entrySet()){
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+
+        studentname.forEach((key,value)->System.out.println(key+" = "+value));
     }
     
-}
+} 
