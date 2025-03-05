@@ -74,6 +74,9 @@ public class WithoutStreamFilterDataDemo {
 
         System.out.println(tot);
 
+        Double avg=productlist.stream().collect(Collectors.averagingDouble(prod->prod.price));
+        System.out.println(avg);
+
     }
     
 }
